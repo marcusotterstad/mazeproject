@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>template</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="inputs">
+
+            <label for="boxSize">Size of board</label>
+            <select name="boxSize" id="boxSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="difficulty">Choose difficulty</label>
+            <select name="difficulty" id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+
+            <label for="inputWidth">Width of Board</label>
+            <input id="inputWidth" name="inputWidth" type="number">
+
+            <label for="inputHeight">Height of table</label>
+            <input id="inputHeight" name="inputHeight" type="number">
+
+            <input type="submit" value="submit" onclick="createCustomField()">
+        </div>
+
+        <div id="game"></div>
+
+        <script type="text/babel" src="script.js"></script>
+    </body>
+</html>
